@@ -19,8 +19,8 @@ function Posts() {
   }
 
   return (
-    <>
-      <h1>Posts</h1>
+    <div style={{ display: "flex", flexWrap: "wrap" }}>
+      <h1 style={{ width: "100%" }}>Posts</h1>
       <hr />
       {isLoading ? (
         <h1>Loading...</h1>
@@ -31,7 +31,7 @@ function Posts() {
         })
       )}
       <div></div>
-    </>
+    </div>
   )
 }
 
